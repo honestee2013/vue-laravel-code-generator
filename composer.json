@@ -1,0 +1,33 @@
+{
+ 
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../mypackages/vuecodegen"
+        }
+    ],
+
+    "name": "honestee/vuecodegen",
+    "description": "Creates a basic skeleton for a CRUD app in both Laravel & Vue.js single file components.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Aminu Abdulkadir Mohammed",
+            "email": "honestee2013@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Honestee\\VueCodeGen\\": "src/"
+        }
+    },
+    "extra": {
+    "laravel": {
+          "providers": [
+              "Honestee\\VueCodeGen\\VueApiServiceProvider"
+          ]
+    }
+  }
+}
